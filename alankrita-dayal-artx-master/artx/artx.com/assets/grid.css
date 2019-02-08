@@ -1,0 +1,553 @@
+@media screen and (min-width: 800px) {
+  .square .pic>span {
+    background-color: rgba(0, 0, 0, 0.3)
+  }
+}
+
+.square .pic:hover span {
+  background-color: transparent
+}
+
+.square .artwork {
+  width: 50%;
+  background-color: gray;
+  text-align: center
+}
+
+.square .artwork a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none
+}
+
+.square .artwork .wrapper .artist .location {
+  font-size: 14px;
+  position: relative;
+  top: -2px
+}
+
+.square #artwork-block {
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, right bottom;
+  background-size: 162px 175px, 354px 222px;
+  text-align: left
+}
+
+.square #artwork-block a {
+  position: relative;
+  overflow: hidden
+}
+
+.square #artwork-block .wrapper {
+  float: left;
+  width: 65%;
+  padding: 0 50px 0 40px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-62%);
+  transform: translateY(-62%)
+}
+
+.square #artwork-block h2 {
+  font-weight: 500;
+  font-size: 13px;
+  color: #EC98B1;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin: 0
+}
+
+.square #artwork-block h1, .square #artwork-block .artist {
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+  margin: 0 0 15px 0;
+  line-height: 1
+}
+
+.square #artwork-block .artist .location {
+  color: white
+}
+
+.square #artwork-block p {
+  margin: 20px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  line-height: 1.2;
+  max-width: 235px
+}
+
+.square #artwork-block .view {
+  display: block;
+  position: absolute;
+  padding: 0 50px 0 40px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  line-height: 85px;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  z-index: 999;
+  transition: all .2s ease-in
+}
+
+.square #artwork-block .view:after {
+  height: 0;
+  width: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  background-color: white;
+  transition: all .2s ease-in-out
+}
+
+.square #artwork-block:hover .view {
+  color: #CD003B
+}
+
+.square #artwork-block:hover .view:after {
+  height: 65px
+}
+
+.load-more {
+  text-align: center;
+  background: #b1edff;
+  transition: background .2s ease-in
+}
+
+.load-more:hover {
+  background: #C5EFF7;
+}
+
+.load-more #load-more {
+  width: 100%;
+  display: inline-block;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  cursor: pointer;
+  color: black;
+  font-weight: 300;
+  font-size: 34px;
+  -webkit-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out
+}
+
+.load-more .plus {
+  cursor: pointer;
+  color: black;
+  font-weight: 300;
+  font-size: 34px;
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  margin-right: 20px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1)
+}
+
+.load-more .plus .plusplus {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  width: 21px;
+  height: 21px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out
+}
+
+.load-more .plus .plusplus::before, .load-more .plus .plusplus::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: black;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1)
+}
+
+.load-more .plus .plusplus::before {
+  top: 10px;
+  left: 0;
+  width: 21px;
+  height: 1px
+}
+
+.load-more .plus .plusplus::after {
+  top: 0;
+  left: 10px;
+  width: 1px;
+  height: 21px
+}
+
+.load-more:hover .plus {
+  border-width: 31px
+}
+
+.load-more:hover .plus .plusplus::before, .load-more:hover .plus .plusplus::after {
+  background: #b1edff;
+}
+
+.load-more:active .plus {
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9)
+}
+
+#load-more-row {
+  overflow: hidden;
+  height: 224px;
+  transition: all .4s ease-in-out
+}
+
+#footer {
+  background-color: white;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  padding-left: 30px;
+  padding-right: 30px
+}
+
+#footer>.row {
+  max-width: 1280px;
+  margin: 0 auto
+}
+
+#footer h1 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #b7c2c9;
+  margin: 0 0 35px 0;
+  letter-spacing: 1px;
+  line-height: 16px
+}
+
+#footer .about, #footer .contact {
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+#footer .about {
+  position: relative;
+  padding-bottom: 32px;
+  padding-left: 0
+}
+
+#footer .about p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #16364f;
+  line-height: 1.6;
+  padding-right: 90px;
+  text-align: left;
+  margin: 0 0 20px 0
+}
+
+#footer .contact {
+  padding-left: 0
+}
+
+#footer .contact p {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  color: #16364f;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: .5px
+}
+
+#footer .contact p strong {
+  font-weight: 600
+}
+
+#footer .bottom-left {
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(22, 54, 79, 0.3)
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 100%;
+    max-width: 100%
+  }
+  #exploreContainer {
+    padding-left: 0;
+    padding-right: 0
+  }
+  #exploreContainer:before {
+    display: none
+  }
+  .square .pic, .square .artwork, .square .image {
+    height: 240px
+  }
+  .square .square-sizer, .square .pic, .square .image {
+    width: 25%
+  }
+  .square .artwork {
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #exploreContainer {
+    /* max-width: 1281px; */
+    margin: 0 auto
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #footer {
+    padding-bottom: 45px
+  }
+  #footer .about p {
+    font-size: 21px
+  }
+  #footer .contact p {
+    font-size: 30px
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #bg {
+    padding-top: 40px;
+    padding-bottom: 40px
+  }
+  #bg .navButton {
+    bottom: 40px
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .square .pic, .square .artwork, .square .image {
+    height: 215px
+  }
+  #footer .contact {
+    padding-left: 15px
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #footer .about p {
+    padding-right: 0 !important
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .square .pic, .square .artwork, .square .image {
+    width: 50%;
+    height: 372px;
+  }
+  .square .artwork h2 {
+    font-size: 18px !important
+  }
+  .square .artwork h1 {
+    font-size: 33px !important
+  }
+  .square .artwork p {
+    font-size: 20px !important
+  }
+  .square .artwork .view {
+    font-size: 18px !important
+  }
+  .square .artwork.horizontal p {
+    width: 70% !important
+  }
+  .square .artwork.horizontal {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #footer .about {
+    padding-bottom: 0
+  }
+  #footer .contact {
+    margin-top: 50px;
+    margin-bottom: 75px
+  }
+  .square .artwork h2 {
+    font-size: 13px !important
+  }
+  .square .artwork h1 {
+    font-size: 24px !important
+  }
+  .square .artwork p {
+    font-size: 16px !important
+  }
+  .square .artwork .view {
+    font-size: 16px !important
+  }
+  .square .artwork.horizontal p {
+    width: 100% !important
+  }
+  #artwork-block {
+    background-position: right top, 75% bottom !important;
+    background-size: 162px 175px, 50% auto !important
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bg .intro {
+    padding-right: 30px;
+    padding-left: 30px
+  }
+  #bg .intro h1 {
+    font-size: 32px;
+    line-height: 38px
+  }
+  #bg .intro h2 {
+    font-size: 19px;
+    line-height: 23px
+  }
+  #bg .navButton {
+    bottom: 70px
+  }
+  .square .pic, .square .artwork, .square .image {
+    height: 290px
+  }
+  .square .square-sizer, .square .pic, .square .image {
+    width: 50%
+  }
+  .square .artwork {
+    width: 100%
+  }
+  #footer .about {
+    margin-bottom: 50px
+  }
+  #artwork-block {
+    background-position: right top, right bottom !important
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #bg {
+    padding-top: 30px
+  }
+  #bg .intro h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 48px
+  }
+  #bg .intro h2 {
+    font-size: 19px;
+    line-height: 23px
+  }
+  #bg .navButton {
+    bottom: 30px
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #bg .intro h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 10px
+  }
+  #bg .intro h2 {
+    font-size: 19px;
+    line-height: 23px
+  }
+  .square .pic, .square .artwork, .square .image {
+    height: 310px
+  }
+  .square .square-sizer, .square .pic, .square .image {
+    width: 100%
+  }
+  .square .artwork {
+    width: 100%;
+    height: 620px
+  }
+  .square .artwork.horizontal .wrapper {
+    width: 100% !important;
+    height: 40%;
+    top: auto !important;
+    left: 0px;
+    bottom: 0px;
+    right: auto;
+    position: absolute !important
+  }
+  .square .artwork.horizontal .view {
+    width: 100% !important;
+    text-align: center
+  }
+  .square .artwork.horizontal .app {
+    height: 60% !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: auto;
+    max-width: none !important;
+    text-align: center !important
+  }
+  .square .artwork.horizontal[id*=artwork-block] .wrapper {
+    -webkit-transform: translateY(-35px) !important;
+    transform: translateY(-35px) !important;
+    padding-left: 25px;
+    padding-right: 25px
+  }
+  .square .artwork#artwork-block {
+    background-size: 162px 175px, 320px auto !important;
+    background-position: right top, 38% bottom !important;
+    background-position: right top, 38% calc(100% - 65px) !important
+  }
+  .square .artwork#artwork-block .wrapper {
+    -webkit-transform: translateY(-100%) !important;
+    transform: translateY(-100%) !important
+  }
+  .square .artwork#artwork-block .view {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #CD003B
+  }
+  .square .artwork#artwork-block .view:after {
+    height: 65px
+  }
+  #load-more-row {
+    height: 198px
+  }
+  .load-more {
+    padding-top: 0;
+    padding-bottom: 0
+  }
+  .load-more #load-more {
+    font-size: 24px;
+    padding-top: 65px;
+    padding-bottom: 65px
+  }
+  .load-more #load-more .plus {
+    font-size: 24px;
+    -webkit-transform: scale(0.75, 0.75);
+    margin-top: -16px;
+    top: 7px;
+    margin-right: 5px
+  }
